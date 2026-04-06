@@ -1,25 +1,48 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kian Playzone - Playground Seru di Karawang | Rp 25.000 Sepuasnya</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Kian Playzone - Karawang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        html,body{overflow-x:hidden;width:100%;max-width:100vw}
-        :root{--primary:#FF6B9D;--secondary:#FFC93C;--accent:#6BCB77;--blue:#4D96FF;--purple:#9B59B6;--dark:#2C3E50;--light:#FFF9FB;--gradient:linear-gradient(135deg,#FF6B9D 0%,#FFC93C 50%,#6BCB77 100%)}
-        body{font-family:'Nunito',sans-serif;background:var(--light);color:var(--dark);line-height:1.6;min-height:100vh}
+        body{font-family:'Nunito',sans-serif;background:#FFF9FB;color:#2C3E50;overflow-x:hidden}
+        .animal-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;opacity:0.1;font-size:30px;display:flex;flex-wrap:wrap;gap:50px;padding:20px;pointer-events:none}
+        .container{max-width:500px;margin:20px auto;padding:20px;text-align:center}
+        .hero{background:linear-gradient(135deg,#FF6B9D,#FFC93C);padding:40px 20px;border-radius:30px;color:white;box-shadow:0 15px 30px rgba(255,107,157,0.3)}
+        .logo-big{font-family:'Fredoka One',cursive;font-size:2.5rem;margin-bottom:10px}
+        .price-card{background:white;color:#FF6B9D;display:inline-block;padding:15px 30px;border-radius:50px;font-weight:800;font-size:1.8rem;margin:20px 0;box-shadow:0 10px 20px rgba(0,0,0,0.1);border:3px dashed #FFC93C}
+        .btn{display:block;width:100%;padding:18px;margin:15px 0;border-radius:50px;text-decoration:none;font-weight:800;font-size:1.1rem;transition:0.3s;box-shadow:0 8px 15px rgba(0,0,0,0.1)}
+        .btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white}
+        .btn-maps{background:#6BCB77;color:white}
+        .info-box{background:#fff;padding:15px;border-radius:20px;margin-top:20px;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+    </style>
+</head>
+<body>
+    <div class="animal-bg">🦁 🐘 🦒 🦓 🐯 🦛 🐼 🦁 🐘 🦒 🦓 🐯 🦛 🐼</div>
+    <div class="container">
+        <div class="hero">
+            <div class="logo-big">🎪 KIAN PLAYZONE</div>
+            <p>Taman Bermain Anak Terheboh di Karawang!</p>
+        </div>
         
-        /* Zoo Background */
-        .animal-bg{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#FFF9FB;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ctext x='20' y='50' font-size='35' opacity='0.08'%3E🦁%3C/text%3E%3Ctext x='120' y='80' font-size='30' opacity='0.08'%3E🐘%3C/text%3E%3Ctext x='60' y='140' font-size='32' opacity='0.08'%3E🦒%3C/text%3E%3Ctext x='150' y='30' font-size='28' opacity='0.08'%3E🦓%3C/text%3E%3Ctext x='10' y='100' font-size='33' opacity='0.08'%3E🐯%3C/text%3E%3Ctext x='100' y='170' font-size='29' opacity='0.08'%3E🦛%3C/text%3E%3Ctext x='170' y='120' font-size='31' opacity='0.08'%3E🦘%3C/text%3E%3Ctext x='40' y='180' font-size='27' opacity='0.08'%3E🐼%3C/text%3E%3C/svg%3E");background-size:200px 200px;z-index:-2;pointer-events:none;animation:bgScroll 60s linear infinite}
-        @keyframes bgScroll{0%{background-position:0 0}100%{background-position:200px 200px}}
+        <div class="price-card">
+            <span style="font-size: 1rem; display:block;">Hanya</span>
+            Rp 25.000
+            <span style="font-size: 1rem; display:block;">Sepuasnya! 🥳</span>
+        </div>
         
-        .floating-animal{position:fixed;font-size:2.5rem;opacity:0.15;z-index:-1;animation:float 20s ease-in-out infinite;text-shadow:2px 2px 4px rgba(0,0,0,0.1)}
-        .floating-animal:nth-child(1){top:5%;left:5%;animation-duration:25s}
-        .floating-animal:nth-child(2){top:25%;right:8%;animation-delay:4s;animation-duration:30s}
-        .floating-animal:nth-child(3){top:50%;left:3%;animation-delay:8s;animation-duration:22s}
+        <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig" target="_blank">📸 Follow Instagram Kami</a>
+        
+        <a href="https://maps.app.goo.gl/B9p6v8z5jP1w6E9S9" class="btn btn-maps" target="_blank">📍 Lihat Lokasi di Google Maps</a>
+        
+        <div class="info-box">
+            <p>🚗 🍿 <b>Parkir & Pojok Jajan Luas!</b></p>
+            <hr style="margin:10px 0; opacity:0.2;">
+            <p>📍 Karawang (Pasar Kosambi)</p>
+            <p>⏰ Buka: 09.00 - 21.00 WIB</p>
+        </div>
+    </div>
+</body>
+</html>
