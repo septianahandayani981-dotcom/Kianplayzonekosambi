@@ -1,24 +1,93 @@
-
-
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kian Playzone - Playground Seru di Karawang | Rp 25.000 Sepuasnya</title>
+    <title>Kian Playzone - Playground Seru di Karawang</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
         html,body{overflow-x:hidden;width:100%;max-width:100vw}
         :root{--primary:#FF6B9D;--secondary:#FFC93C;--accent:#6BCB77;--blue:#4D96FF;--purple:#9B59B6;--dark:#2C3E50;--light:#FFF9FB;--gradient:linear-gradient(135deg,#FF6B9D 0%,#FFC93C 50%,#6BCB77 100%)}
-        body{font-family:'Nunito',sans-serif;background:var(--light);color:var(--dark);line-height:1.6;min-height:100vh}
+        body{font-family:'Nunito',sans-serif;background:var(--light);color:var(--dark);line-height:1.6;min-height:100vh;padding:20px 15px}
         
-        /* Zoo Background */
+        /* Zoo Background - Sesuai CodePen */
         .animal-bg{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#FFF9FB;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ctext x='20' y='50' font-size='35' opacity='0.08'%3E🦁%3C/text%3E%3Ctext x='120' y='80' font-size='30' opacity='0.08'%3E🐘%3C/text%3E%3Ctext x='60' y='140' font-size='32' opacity='0.08'%3E🦒%3C/text%3E%3Ctext x='150' y='30' font-size='28' opacity='0.08'%3E🦓%3C/text%3E%3Ctext x='10' y='100' font-size='33' opacity='0.08'%3E🐯%3C/text%3E%3Ctext x='100' y='170' font-size='29' opacity='0.08'%3E🦛%3C/text%3E%3Ctext x='170' y='120' font-size='31' opacity='0.08'%3E🦘%3C/text%3E%3Ctext x='40' y='180' font-size='27' opacity='0.08'%3E🐼%3C/text%3E%3C/svg%3E");background-size:200px 200px;z-index:-2;pointer-events:none;animation:bgScroll 60s linear infinite}
         @keyframes bgScroll{0%{background-position:0 0}100%{background-position:200px 200px}}
+
+        .container{width:100%;max-width:400px;margin:0 auto;position:relative;z-index:1}
         
-        .floating-animal{position:fixed;font-size:2.5rem;opacity:0.15;z-index:-1;animation:float 20s ease-in-out infinite;text-shadow:2px 2px 4px rgba(0,0,0,0.1)}
-        .floating-animal:nth-child(1){top:5%;left:5%;animation-duration:25s}
-        .floating-animal:nth-child(2){top:25%;right:8%;animation-delay:4s;animation-duration:30s}
-        .floating-animal:nth-child(3){top:50%;left:3%;animation-delay:8s;animation-duration:22s}
+        .nav-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}
+        .logo-box{display:flex;align-items:center;gap:10px}
+        .logo-box span{font-size:1.5rem}
+        .logo-box h1{font-family:'Fredoka One',cursive;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:1.6rem}
+        .menu-dots{color:var(--primary);font-size:1.5rem}
+
+        .promo-pill{background:white;border:2px dashed var(--primary);padding:10px 20px;border-radius:50px;display:inline-block;margin-bottom:15px;box-shadow:0 4px 15px rgba(255,107,157,0.15)}
+        .promo-pill span{color:var(--primary);font-weight:800;font-size:0.9rem}
+
+        .rating-pill{background:white;padding:6px 18px;border-radius:50px;display:inline-block;margin-bottom:25px;box-shadow:0 4px 10px rgba(0,0,0,0.05);font-weight:700;font-size:0.9rem}
+
+        .price-box{background:linear-gradient(135deg,#FF6B9D,#FFC93C);padding:35px 20px;border-radius:35px;color:white;position:relative;margin-bottom:30px;box-shadow:0 15px 35px rgba(255,107,157,0.3);border:3px dashed rgba(255,255,255,0.6)}
+        .price-box p{font-size:1rem;font-weight:600;opacity:0.9}
+        .price-box h2{font-size:2.8rem;font-weight:800;margin:5px 0}
+
+        .text-content h2{font-family:'Fredoka One',cursive;font-size:1.8rem;color:var(--dark);margin-bottom:15px}
+        .text-content p{color:#5D6D7E;font-size:1rem;margin-bottom:30px;font-weight:600}
+
+        .btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:18px;border-radius:50px;text-decoration:none;font-weight:800;font-size:1.05rem;margin-bottom:15px;transition:0.3s;box-shadow:0 10px 20px rgba(0,0,0,0.1);color:white}
+        .btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+        .btn-maps{background:linear-gradient(45deg,#FF9A9E,#FAD0C4);color:var(--primary)}
+
+        .info-card{background:white;width:100%;padding:25px;border-radius:30px;margin-top:20px;box-shadow:0 8px 20px rgba(0,0,0,0.05);text-align:center}
+        .info-item{margin-bottom:10px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:10px}
+    </style>
+</head>
+<body>
+    <div class="animal-bg"></div>
+    
+    <div class="container">
+        <div class="nav-header">
+            <div class="logo-box">
+                <span>🎪</span>
+                <h1>KIAN PLAYZONE</h1>
+            </div>
+            <div class="menu-dots">☰</div>
+        </div>
+
+        <center>
+            <div class="promo-pill">
+                <span>🎪 Taman Bermain di Karawang</span>
+            </div>
+            <br>
+            <div class="rating-pill">⭐ 4.7 (43 Ulasan)</div>
+            
+            <div class="price-box">
+                <p>Hanya</p>
+                <h2>Rp 25.000</h2>
+                <p>Sepuasnya! 🥳</p>
+            </div>
+
+            <div class="text-content">
+                <h2>KIAN PLAYZONE</h2>
+                <p>Taman Bermain Indoor Terbesar & Terseru di Karawang! 🎈<br>Aman, Nyaman, dan Penuh Keseruan untuk Si Kecil</p>
+            </div>
+
+            <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig">📸 Follow @kianplayzone</a>
+            
+            <a href="https://maps.app.goo.gl/3DGeU3x6f3NQtAFN8" class="btn btn-maps">📍 Lihat Lokasi Akurat</a>
+
+            <div class="info-card">
+                <div class="info-item">
+                    <span>🚗</span>
+                    <p>Parkir & Pojok Jajan Luas!</p>
+                </div>
+                <div style="opacity:0.6; font-size:0.9rem">
+                    <p>📍 Karawang (Pasar Kosambi)</p>
+                    <p>⏰ Buka: 09.00 - 21.00 WIB</p>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
