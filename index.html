@@ -3,34 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kian Playzone - Playground Karawang</title>
+    <title>Kian Playzone - Karawang</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Nunito',sans-serif;background:#FFF9FB;color:#2C3E50;text-align:center;padding:20px}
-        .header{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:20px}
-        .header h1{font-family:'Fredoka One',cursive;color:#FF6B9D;font-size:1.8rem}
-        .badge-yellow{background:#FFF;border:2px dashed #FFC93C;padding:8px 20px;border-radius:50px;display:inline-block;margin-bottom:15px;color:#FF6B9D;font-weight:bold}
-        .rating{background:#FFF;box-shadow:0 4px 10px rgba(0,0,0,0.05);padding:8px 15px;border-radius:50px;display:inline-block;margin-bottom:20px;font-weight:bold}
-        .price-card{background:linear-gradient(135deg,#FF6B9D,#FFC93C);color:white;padding:30px;border-radius:30px;box-shadow:0 10px 25px rgba(255,107,157,0.3);margin-bottom:25px;position:relative;border:3px dashed white}
-        .price-card h2{font-size:2.5rem;font-weight:800}
-        .main-title{font-family:'Fredoka One',cursive;font-size:1.8rem;color:#2C3E50;margin-bottom:15px}
-        .description{font-size:1rem;margin-bottom:20px;color:#5D6D7E;line-height:1.6}
-        .btn{display:block;width:100%;padding:15px;margin:10px 0;border-radius:50px;text-decoration:none;font-weight:800;color:white;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
-        .btn-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
-        .btn-maps{background:linear-gradient(45deg,#6BCB77,#4D96FF)}
-        .info-bottom{background:white;padding:15px;border-radius:20px;margin-top:20px;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFF5E1 50%, #E1F5FE 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .nav-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+        .logo-text {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.5rem;
+            background: linear-gradient(to right, #FF6B9D, #6BCB77);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .menu-icon { color: #FF6B9D; font-size: 1.5rem; }
+
+        .badge-promo {
+            background: white;
+            border: 2px dashed #FF6B9D;
+            padding: 10px 25px;
+            border-radius: 50px;
+            color: #FF6B9D;
+            font-weight: 800;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.2);
+        }
+        .rating-box {
+            background: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .price-card {
+            background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);
+            width: 100%;
+            max-width: 320px;
+            padding: 30px;
+            border-radius: 30px;
+            color: white;
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.4);
+            border: 3px dashed rgba(255,255,255,0.8);
+            margin-bottom: 30px;
+        }
+        .price-card h2 { font-size: 2.5rem; font-weight: 800; margin: 5px 0; }
+        
+        .main-info h1 { font-family: 'Fredoka One', cursive; color: #2C3E50; font-size: 2rem; margin-bottom: 15px; }
+        .description { color: #5D6D7E; line-height: 1.6; margin-bottom: 30px; font-weight: 600; }
+
+        .btn {
+            width: 100%;
+            max-width: 320px;
+            padding: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .btn-ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-maps { background: linear-gradient(45deg, #FF9A9E, #FAD0C4); color: #FF6B9D; }
+
+        .footer-info {
+            background: white;
+            width: 100%;
+            max-width: 320px;
+            padding: 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <span>🎪</span>
-        <h1>KIAN PLAYZONE</h1>
+    <div class="nav-header">
+        <div class="logo-text"><span>🎪</span> KIAN PLAYZONE</div>
+        <div class="menu-icon">☰</div>
     </div>
 
-    <div class="badge-yellow">🎪 Taman Bermain di Karawang</div>
-    <br>
-    <div class="rating">⭐ 4.7 (43 Ulasan)</div>
+    <div class="badge-promo">🎪 Taman Bermain di Karawang</div>
+    <div class="rating-box">⭐ 4.7 (43 Ulasan)</div>
 
     <div class="price-card">
         <p>Hanya</p>
@@ -38,16 +114,19 @@
         <p>Sepuasnya! 🥳</p>
     </div>
 
-    <h2 class="main-title">KIAN PLAYZONE</h2>
-    <p class="description">
-        Taman Bermain Indoor Terbesar & Terseru di Karawang! 🎈<br>
-        Aman, Nyaman, dan Penuh Keseruan untuk Si Kecil
-    </p>
+    <div class="main-info">
+        <h1>KIAN PLAYZONE</h1>
+        <p class="description">
+            Taman Bermain Indoor Terbesar & Terseru di Karawang! 🎈<br>
+            Aman, Nyaman, dan Penuh Keseruan untuk Si Kecil
+        </p>
+    </div>
 
     <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig">📸 Follow @kianplayzone</a>
-    <a href="http://maps.app.goo.gl/B9p6v8z5jP1w6E9S9" class="btn btn-maps">📍 Lihat Lokasi</a>
+    
+    <a href="https://maps.app.goo.gl/3DGeU3x6f3NQtAFN8" class="btn btn-maps">📍 Lihat Lokasi</a>
 
-    <div class="info-bottom">
+    <div class="footer-info">
         <p>🚗 🍿 <b>Parkir & Pojok Jajan Luas!</b></p>
         <p>📍 Karawang (Pasar Kosambi)</p>
         <p>⏰ 09.00 - 21.00 WIB</p>
