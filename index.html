@@ -8,19 +8,17 @@
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
         html,body{overflow-x:hidden;width:100%;background-color:#FFF9FB}
-        body{font-family:'Nunito',sans-serif;color:#2C3E50;line-height:1.6;min-height:100vh;padding:20px 15px}
+        body{font-family:'Nunito',sans-serif;color:#2C3E50;min-height:100vh;padding:20px 15px}
         
-        /* Zoo Background Aktif */
-        .animal-bg{position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ctext x='20' y='50' font-size='35' opacity='0.08'%3E🦁%3C/text%3E%3Ctext x='120' y='80' font-size='30' opacity='0.08'%3E🐘%3C/text%3E%3Ctext x='60' y='140' font-size='32' opacity='0.08'%3E🦒%3C/text%3E%3Ctext x='150' y='30' font-size='28' opacity='0.08'%3E🦓%3C/text%3E%3Ctext x='10' y='100' font-size='33' opacity='0.08'%3E🐯%3C/text%3E%3Ctext x='100' y='170' font-size='29' opacity='0.08'%3E🦛%3C/text%3E%3Ctext x='170' y='120' font-size='31' opacity='0.08'%3E🦘%3C/text%3E%3Ctext x='40' y='180' font-size='27' opacity='0.08'%3E🐼%3C/text%3E%3C/svg%3E");background-size:200px 200px;z-index:-2;pointer-events:none;animation:bgScroll 60s linear infinite}
+        .animal-bg{position:fixed;top:0;left:0;width:100%;height:100%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ctext x='20' y='50' font-size='35' opacity='0.08'%3E🦁%3C/text%3E%3Ctext x='120' y='80' font-size='30' opacity='0.08'%3E🐘%3C/text%3E%3Ctext x='60' y='140' font-size='32' opacity='0.08'%3E🦒%3C/text%3E%3Ctext x='150' y='30' font-size='28' opacity='0.08'%3E🦓%3C/text%3E%3C/svg%3E");background-size:200px 200px;z-index:-2;pointer-events:none;animation:bgScroll 60s linear infinite}
         @keyframes bgScroll{0%{background-position:0 0}100%{background-position:200px 200px}}
 
         .container{width:100%;max-width:400px;margin:0 auto;position:relative;z-index:1;text-align:center}
-        
         .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
         .logo{font-family:'Fredoka One',cursive;font-size:1.6rem;color:#FF6B9D;display:flex;align-items:center;gap:10px}
         
-        .promo-badge{background:white;border:2px dashed #FF6B9D;padding:10px 20px;border-radius:50px;display:inline-block;margin-bottom:15px;box-shadow:0 4px 15px rgba(255,107,157,0.15);color:#FF6B9D;font-weight:800}
-        .rating{background:white;padding:6px 18px;border-radius:50px;display:inline-block;margin-bottom:25px;box-shadow:0 4px 10px rgba(0,0,0,0.05);font-weight:700}
+        .promo-badge{background:white;border:2px dashed #FF6B9D;padding:10px 20px;border-radius:50px;display:inline-block;margin-bottom:15px;color:#FF6B9D;font-weight:800;box-shadow:0 4px 15px rgba(255,107,157,0.1)}
+        .rating{background:white;padding:6px 18px;border-radius:50px;display:inline-block;margin-bottom:25px;font-weight:700;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
 
         .price-card{background:linear-gradient(135deg,#FF6B9D,#FFC93C);padding:35px 20px;border-radius:35px;color:white;margin-bottom:30px;box-shadow:0 15px 35px rgba(255,107,157,0.3);border:3px dashed rgba(255,255,255,0.6)}
         .price-card h2{font-size:2.8rem;font-weight:800;margin:5px 0}
@@ -28,11 +26,11 @@
         .main-title{font-family:'Fredoka One',cursive;font-size:1.8rem;margin-bottom:15px}
         .desc{color:#5D6D7E;font-size:1rem;margin-bottom:30px;font-weight:600}
 
-        .btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:18px;border-radius:50px;text-decoration:none;font-weight:800;margin-bottom:15px;box-shadow:0 10px 20px rgba(0,0,0,0.1);color:white}
+        .btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:18px;border-radius:50px;text-decoration:none;font-weight:800;margin-bottom:15px;color:white;box-shadow:0 10px 20px rgba(0,0,0,0.1)}
         .btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
         .btn-maps{background:linear-gradient(45deg,#6BCB77,#4D96FF)}
 
-        .info-card{background:white;padding:25px;border-radius:30px;margin-top:20px;box-shadow:0 8px 20px rgba(0,0,0,0.05)}
+        .footer-card{background:white;padding:25px;border-radius:30px;margin-top:20px;box-shadow:0 8px 20px rgba(0,0,0,0.05)}
     </style>
 </head>
 <body>
@@ -56,11 +54,12 @@
         <h2 class="main-title">KIAN PLAYZONE</h2>
         <p class="desc">Taman Bermain Indoor Terbesar & Terseru di Karawang! 🎈<br>Aman, Nyaman, dan Penuh Keseruan untuk Si Kecil</p>
 
-        <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig">📸 Follow @kianplayzone</a>
-        <a href="https://maps.app.goo.gl/3DGeU3x6f3NQtAFN8" class="btn btn-maps">📍 Lihat Lokasi</a>
+        <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig" target="_blank">📸 Follow @kianplayzone</a>
+        
+        <a href="https://maps.app.goo.gl/3DGeU3x6f3NQtAFN8" class="btn btn-maps" target="_blank">📍 Lihat Lokasi Akurat</a>
 
-        <div class="info-card">
-            <p>🚗 🍿 <b>Parkir & Pojok Jajan Luas!</b></p>
+        <div class="footer-card">
+            <p>🚗 🍿 <b>Parkir & Pojok Jajan!</b></p>
             <p style="font-size:0.9rem; margin-top:5px; opacity:0.7">📍 Karawang (Pasar Kosambi) | ⏰ 09.00 - 21.00 WIB</p>
         </div>
     </div>
