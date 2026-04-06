@@ -3,46 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kian Playzone - Karawang</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Kian Playzone - Playground Karawang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Nunito',sans-serif;background:#FFF9FB;color:#2C3E50;overflow-x:hidden}
-        .animal-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;opacity:0.1;font-size:30px;display:flex;flex-wrap:wrap;gap:50px;padding:20px;pointer-events:none}
-        .container{max-width:500px;margin:20px auto;padding:20px;text-align:center}
-        .hero{background:linear-gradient(135deg,#FF6B9D,#FFC93C);padding:40px 20px;border-radius:30px;color:white;box-shadow:0 15px 30px rgba(255,107,157,0.3)}
-        .logo-big{font-family:'Fredoka One',cursive;font-size:2.5rem;margin-bottom:10px}
-        .price-card{background:white;color:#FF6B9D;display:inline-block;padding:15px 30px;border-radius:50px;font-weight:800;font-size:1.8rem;margin:20px 0;box-shadow:0 10px 20px rgba(0,0,0,0.1);border:3px dashed #FFC93C}
-        .btn{display:block;width:100%;padding:18px;margin:15px 0;border-radius:50px;text-decoration:none;font-weight:800;font-size:1.1rem;transition:0.3s;box-shadow:0 8px 15px rgba(0,0,0,0.1)}
-        .btn-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white}
-        .btn-maps{background:#6BCB77;color:white}
-        .info-box{background:#fff;padding:15px;border-radius:20px;margin-top:20px;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+        body{font-family:'Nunito',sans-serif;background:#FFF9FB;color:#2C3E50;text-align:center;padding:20px}
+        .header{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:20px}
+        .header h1{font-family:'Fredoka One',cursive;color:#FF6B9D;font-size:1.8rem}
+        .badge-yellow{background:#FFF;border:2px dashed #FFC93C;padding:8px 20px;border-radius:50px;display:inline-block;margin-bottom:15px;color:#FF6B9D;font-weight:bold}
+        .rating{background:#FFF;box-shadow:0 4px 10px rgba(0,0,0,0.05);padding:8px 15px;border-radius:50px;display:inline-block;margin-bottom:20px;font-weight:bold}
+        .price-card{background:linear-gradient(135deg,#FF6B9D,#FFC93C);color:white;padding:30px;border-radius:30px;box-shadow:0 10px 25px rgba(255,107,157,0.3);margin-bottom:25px;position:relative;border:3px dashed white}
+        .price-card h2{font-size:2.5rem;font-weight:800}
+        .main-title{font-family:'Fredoka One',cursive;font-size:1.8rem;color:#2C3E50;margin-bottom:15px}
+        .description{font-size:1rem;margin-bottom:20px;color:#5D6D7E;line-height:1.6}
+        .btn{display:block;width:100%;padding:15px;margin:10px 0;border-radius:50px;text-decoration:none;font-weight:800;color:white;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
+        .btn-ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}
+        .btn-maps{background:linear-gradient(45deg,#6BCB77,#4D96FF)}
+        .info-bottom{background:white;padding:15px;border-radius:20px;margin-top:20px;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
     </style>
 </head>
 <body>
-    <div class="animal-bg">🦁 🐘 🦒 🦓 🐯 🦛 🐼 🦁 🐘 🦒 🦓 🐯 🦛 🐼</div>
-    <div class="container">
-        <div class="hero">
-            <div class="logo-big">🎪 KIAN PLAYZONE</div>
-            <p>Taman Bermain Anak Terheboh di Karawang!</p>
-        </div>
-        
-        <div class="price-card">
-            <span style="font-size: 1rem; display:block;">Hanya</span>
-            Rp 25.000
-            <span style="font-size: 1rem; display:block;">Sepuasnya! 🥳</span>
-        </div>
-        
-        <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig" target="_blank">📸 Follow Instagram Kami</a>
-        
-        <a href="https://maps.app.goo.gl/B9p6v8z5jP1w6E9S9" class="btn btn-maps" target="_blank">📍 Lihat Lokasi di Google Maps</a>
-        
-        <div class="info-box">
-            <p>🚗 🍿 <b>Parkir & Pojok Jajan Luas!</b></p>
-            <hr style="margin:10px 0; opacity:0.2;">
-            <p>📍 Karawang (Pasar Kosambi)</p>
-            <p>⏰ Buka: 09.00 - 21.00 WIB</p>
-        </div>
+    <div class="header">
+        <span>🎪</span>
+        <h1>KIAN PLAYZONE</h1>
+    </div>
+
+    <div class="badge-yellow">🎪 Taman Bermain di Karawang</div>
+    <br>
+    <div class="rating">⭐ 4.7 (43 Ulasan)</div>
+
+    <div class="price-card">
+        <p>Hanya</p>
+        <h2>Rp 25.000</h2>
+        <p>Sepuasnya! 🥳</p>
+    </div>
+
+    <h2 class="main-title">KIAN PLAYZONE</h2>
+    <p class="description">
+        Taman Bermain Indoor Terbesar & Terseru di Karawang! 🎈<br>
+        Aman, Nyaman, dan Penuh Keseruan untuk Si Kecil
+    </p>
+
+    <a href="https://www.instagram.com/kian.playzone/" class="btn btn-ig">📸 Follow @kianplayzone</a>
+    <a href="http://maps.app.goo.gl/B9p6v8z5jP1w6E9S9" class="btn btn-maps">📍 Lihat Lokasi</a>
+
+    <div class="info-bottom">
+        <p>🚗 🍿 <b>Parkir & Pojok Jajan Luas!</b></p>
+        <p>📍 Karawang (Pasar Kosambi)</p>
+        <p>⏰ 09.00 - 21.00 WIB</p>
     </div>
 </body>
 </html>
